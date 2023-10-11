@@ -1,13 +1,74 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.contenedor {
+  background-color: #141414;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows:    1fr 1fr;
+}
+
+.bg-transparent {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(.8);
+  background: rgb(20, 20, 20);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(250, 247, 247, 0) 60%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(250, 247, 247, 0) 60%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(250, 247, 247, 0) 60%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#141414",endColorstr="#faf7f7",GradientType=1);
+  z-index: 2;
+}
+
+.spotlight {
+  z-index: 10;
+}
+
+.colorLogo {
+  color: #e50914 !important;
+}
+
+a:hover {
+  transition: all 0.3s ease-in-out;
+  color: rgba(255, 255, 255, 0.708) !important;
+}
+
+.title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backdrop-filter: blur(5px) brightness(.6);
+  
+}
+
