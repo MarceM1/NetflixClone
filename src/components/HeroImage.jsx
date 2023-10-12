@@ -33,7 +33,7 @@ function HeroSection({movies}) {
             {movies[0].overview}
           </h5>
         </div>
-        <div className="d-flex justify-content-between gap-5 w-100 pt-5">
+        <div className="d-grid d-md-flex justify-content-between gap-5 w-100 pt-5">
           <button
             type="button"
             className="btn btn-outline-light rounded w-50 fw-bolder d-flex align-items-center justify-content-center gap-3"
