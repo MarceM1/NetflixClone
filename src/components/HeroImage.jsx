@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 
-function HeroSection({movies}) {
+function HeroSection({ movies }) {
   // Verificar si movies es un arreglo válido y tiene al menos un elemento
-   
 
   return (
     <div className="hero vh-100 position-relative">
@@ -17,7 +16,7 @@ function HeroSection({movies}) {
         }}
         alt="..."
       />
-      <div className="position-absolute text-white d-flex flex-column w-50 align-items-start h-75 justify-content-end px-5 spotlight">
+      <div className="col-12 col-md-7 position-absolute text-white d-flex flex-column  align-items-start h-75 justify-content-end px-5 spotlight">
         <div>
           <h2 className="fw-bolder">{movies[6].title}</h2>
           <h5
@@ -33,19 +32,19 @@ function HeroSection({movies}) {
             {movies[0].overview}
           </h5>
         </div>
-        <div className="d-grid d-md-flex justify-content-between gap-5 w-100 pt-5">
+        <div className="row d-flex justify-content-between w-100 px-3 pt-1 pt-md-3">
           <button
             type="button"
-            className="btn btn-outline-light rounded w-50 fw-bolder d-flex align-items-center justify-content-center gap-3"
+            className="col-12 col-md-5 btn btn-outline-light rounded fw-bolder d-flex align-items-center justify-content-center gap-3"
           >
             <i className="bi bi-play fs-4"></i>
             Reproducir
           </button>
           <button
             type="button"
-            className="btn btn-outline-dark rounded w-50 text-white fw- d-flex align-items-center justify-content-center gap-3 "
+            className="mt-2 mt-md-0 col-12 col-md-5 btn btn-outline-dark rounded text-white fw- d-flex align-items-center justify-content-center gap-3"
           >
-            <i className="bi bi-info-circle fs-5"></i>Más información
+            <i className="bi bi-info-circle fs-5"></i><span className="">Más información</span>
           </button>
         </div>
       </div>
