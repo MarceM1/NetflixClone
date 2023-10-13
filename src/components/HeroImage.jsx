@@ -16,7 +16,7 @@ function HeroSection({ movies }) {
         }}
         alt="..."
       />
-      <div className="col-12 col-md-7 position-absolute text-white d-flex flex-column  align-items-start h-75 justify-content-end px-5 spotlight">
+      <div className="col-12 col-md-7 position-absolute text-white d-flex flex-column  align-items-start h-75 justify-content-end px-5 spotlight ">
         <div>
           <h2 className="fw-bolder">{movies[6].title}</h2>
           <h5
@@ -32,7 +32,7 @@ function HeroSection({ movies }) {
             {movies[0].overview}
           </h5>
         </div>
-        <div className="row d-flex justify-content-between w-100 px-3 pt-1 pt-md-3">
+        <div className="row d-flex justify-content-between w-100 px-3  pt-md-3">
           <button
             type="button"
             className="col-12 col-md-5 btn btn-outline-light rounded fw-bolder d-flex align-items-center justify-content-center gap-3"

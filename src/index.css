@@ -18,6 +18,23 @@ code {
   grid-template-rows:    1fr 1fr;
 }
 
+/* Query */
+
+@media screen and (max-width: 475px) {
+  .contenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:    repeat(10, 1fr);
+  }
+}
+
+@media screen and (min-width: 476px) and (max-width: 768px) {
+  .contenedor {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+
 .bg-transparent {
   background-color: rgba(255, 255, 255, 0) !important;
 }
@@ -71,6 +88,7 @@ a:hover {
   backdrop-filter: blur(5px) brightness(.6);
   
 }
+
 
 /* button {
   width: 48% !important;

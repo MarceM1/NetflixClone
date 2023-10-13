@@ -4,15 +4,15 @@ function NavBar() {
   return (
     <div>
         <nav
-          className="navbar navbar-expand-lg fixed-top
-        "
+          className="navbar  navbar-expand-lg fixed-top navbar-light"
         >
           <div className="container-fluid px-5 text-white">
             <a className="navbar-brand colorLogo fs-2" href="#">
               NETFLIX
             </a>
             <button
-              className="navbar-toggler text-white"
+              className="navbar-toggler  text-white custom-white-icon"
+              style={{ color: 'white' }}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -20,7 +20,7 @@ function NavBar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon custom-white-icon" style={{ color: 'white' }}></span>
             </button>
             <div
               className="collapse navbar-collapse"
